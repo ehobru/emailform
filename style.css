@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --text-color: white;
+    --bg-url: url(./img/Desktop04.png);
+    --stroke-color: rgba(255,255,255,0.5);
+    --surface-color: rgba(255,255,255,0.05);
+    --surface-color-hover: rgba(0,0,0,0.02);
+    --highlight-color: rgba(255,255,255,0.2);
+    --switch-bg-url: url(./img/moon-stars.svg);
+}
+
+.light {
+    --text-color: black;
+    --bg-url: url(./img/Desktop04-light.png);
+    --stroke-color: rgba(0,0,0,0.5);
+    --surface-color: rgba(0,0,0,0.05);
+    --surface-color-hover: rgba(0,0,0,0.02);
+    --highlight-color: rgba(0,0,0,0.1);
+    --switch-bg-url: url(./img/sun.svg);
+}
+
+body {
+    background: var(--bg-url) no-repeat top center/cover;
+    height: 100vh;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    padding: 1rem;
+}
+
+body * {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-color);
+}
+
+#switch{
+    position: relative;
+    width: 64px;
+    margin: 4px auto;
+}
+
+#switch button{
+    width: 32px;
+    height: 32px;
+    background: white var(--switch-bg-url) no-repeat center;
+    border: 1px solid var(--stroke-color);
+    border-radius: 50%;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+    transform: translateY(-50%);
+    animation: slide-back 0.2s;
+}
+
+.light #switch button{
+    animation: slide-in 0.2s forwards;
+}
+
+#switch button:hover{
+    outline: 8px solid var(--highlight-color);
+}
+
+#switch span{
+    display: block;
+    width: 64px;
+    height: 24px;
+    background: var(--surface-color);
+    border: 1px solid var(--stroke-color);
+    backdrop-filter: blur (4px);
+    -webkit-backdrop-filter: blur (4px);
+    border-radius: 9999px;
+}
+
+form {
+    width: 100%;
+    max-width: 30rem;
+}
+
+label{
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+label, input, textarea, button{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+input, textarea, button{
+    width: 100%;
+    font: inherit;
+    padding: 1.25rem;
+    font-weight: 400;
+}
+
+input, textarea{
+    margin-bottom: 1rem;
+    color: var(--text-color);
+    background: var(--surface-color);
+    border: 1px solid var(--stroke-color);
+    border-radius: 25px;
+
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+textarea:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1000px var(--surface-color) inset !important;
+  -webkit-text-fill-color: var(--text-color) !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+input:hover, input:focus, textarea:hover, textarea:focus {
+    outline: none;
+    background: var(--surface-color-hover);
+    border: 1.5px solid var(--text-color);
+}
+
+label{
+    margin-bottom: 0.3rem;
+}
+
+textarea{
+    min-height: 16rem;
+    resize: none;
+}
+
+button{
+    border: 1.5px solid var(--text-color);
+    border-radius: 25px;
+    background: rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: 0.2s;
+    font-weight: 700;
+}
+
+button:hover, button:focus{
+    outline: none;
+    background: rgba(0,0,0,0.5);
+    border: 1.5px solid var(--text-color);
+}
+
+button:disabled{
+    cursor: not-allowed;
+    background: dimgray;
+}
+
+@media (min-width: 700px){
+    :root{
+        --bg-url: url(./img/Desktop04.png);
+    }
+    .light{
+        --bg-url: url(./img/Desktop04-light.png);
+    }
+}
+
+@keyframes slide-in{
+    from {
+        left: 0;
+    }
+    to {
+        left: 50%;
+    }
+}
+
+@keyframes slide-back{
+    from {
+        left: 50%;
+    }
+    to {
+        left: 0;
+    }
+}
