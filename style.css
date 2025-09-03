@@ -37,6 +37,23 @@ body * {
     color: var(--text-color);
 }
 
+#container {
+    width: 100%;
+    margin: 56px auto 0px;
+    padding: 0 24px;
+    margin-top: 40px;
+}
+
+#titulo{
+    text-align: center;
+    margin-top: 45px;
+}
+
+#titulo h2{
+    font-weight: 200;
+    line-height: 24px;
+}
+
 #switch{
     position: relative;
     width: 64px;
@@ -72,8 +89,8 @@ body * {
     height: 24px;
     background: var(--surface-color);
     border: 1px solid var(--stroke-color);
-    backdrop-filter: blur (4px);
-    -webkit-backdrop-filter: blur (4px);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
     border-radius: 9999px;
 }
 
@@ -136,7 +153,7 @@ label{
 }
 
 textarea{
-    min-height: 16rem;
+    min-height: 12rem;
     resize: none;
 }
 
