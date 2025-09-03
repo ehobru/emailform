@@ -41,16 +41,16 @@ body * {
     width: 100%;
     margin: 56px auto 0px;
     padding: 0 24px;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 #titulo{
     text-align: center;
-    margin-top: 45px;
+    margin-top: 50px;
 }
 
-#titulo h2{
-    font-weight: 200;
+#titulo h3{
+    font-weight: 250;
     line-height: 24px;
 }
 
@@ -58,6 +58,7 @@ body * {
     position: relative;
     width: 64px;
     margin: 4px auto;
+    margin-top: 30px;
 }
 
 #switch button{
