@@ -27,7 +27,6 @@
 body {
     background: var(--bg-url) no-repeat top center/cover;
     height: 100vh;
-    overflow: hidden;
     display: grid;
     place-items: center;
     padding: 1rem;
@@ -137,7 +136,7 @@ label{
 }
 
 textarea{
-    min-height: 12rem;
+    min-height: 16rem;
     resize: none;
 }
 
