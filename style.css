@@ -41,7 +41,7 @@ body * {
     width: 100%;
     margin: 56px auto 0px;
     padding: 0 24px;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 #titulo{
@@ -97,7 +97,7 @@ body * {
 
 form {
     width: 100%;
-    max-width: 30rem;
+    max-width: 25rem;
     margin-bottom: 40px;
 }
 
@@ -126,7 +126,7 @@ input, textarea{
     color: var(--text-color);
     background: var(--surface-color);
     border: 1px solid var(--stroke-color);
-    border-radius: 25px;
+    border-radius: 30px;
 
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
