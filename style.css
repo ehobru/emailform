@@ -29,7 +29,7 @@ body {
     height: 100vh;
     display: grid;
     place-items: center;
-    padding: 1rem;
+    padding-bottom: 1rem;
 }
 
 body * {
@@ -41,12 +41,12 @@ body * {
     width: 100%;
     margin: 56px auto 0px;
     padding: 0 24px;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 #titulo{
     text-align: center;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 #titulo h3{
@@ -58,10 +58,10 @@ body * {
     position: relative;
     width: 64px;
     margin: 4px auto;
-    margin-top: 30px;
 }
 
 #switch button{
+    padding: 0%;
     width: 32px;
     height: 32px;
     background: white var(--switch-bg-url) no-repeat center;
@@ -98,12 +98,14 @@ body * {
 form {
     width: 100%;
     max-width: 30rem;
+    margin-bottom: 40px;
 }
 
 label{
     font-size: 16px;
     font-weight: 700;
     color: var(--text-color);
+    margin-bottom: 0.3rem;
 }
 
 label, input, textarea, button{
@@ -149,11 +151,8 @@ input:hover, input:focus, textarea:hover, textarea:focus {
     border: 1.5px solid var(--text-color);
 }
 
-label{
-    margin-bottom: 0.3rem;
-}
-
 textarea{
+    text-align: left;
     min-height: 12rem;
     resize: none;
 }
