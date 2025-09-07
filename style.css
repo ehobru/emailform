@@ -194,18 +194,18 @@ button:disabled{
     }
     #switch{
         position: relative;
-        width: 89px;
-        margin: 8px auto;
+        width: 64px;
+        margin: 6px auto;
     }
     #switch button{
-        width: 44px;
-        height: 44px;
-        background-size: 24px;
+        width: 32px;
+        height: 32px;
+        background-size: 20px;
     }
     #switch span{
         display: block;
-        width: 89px;
-        height: 32px;
+        width: 64px;
+        height: 24px;
     }
     ul li a {
         display: flex;
