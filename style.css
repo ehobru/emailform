@@ -178,20 +178,6 @@ button:disabled{
 }
 
 @media (min-width: 1720px){
-    body{
-        padding-top: 80px;
-    }
-    #profile img{
-        width: 156px;
-    }
-    #profile p{
-        font-size: 22px;
-        padding-top: 8px;
-    }
-    #profile h6{
-        font-size: 14px;
-        padding-top: 4px;
-    }
     #switch{
         position: relative;
         width: 64px;
@@ -224,17 +210,6 @@ button:disabled{
 }
 
 @media (min-width: 1024px) and (max-width: 1440){
-    #profile img{
-        width: 124px;
-    }
-    #profile p{
-        font-size: 18px;
-        padding-top: 6px;
-    }
-    #profile h6{
-        font-size: 12px;
-        padding-top: 2px;
-    }
     #switch{
         position: relative;
         width: 76px;
@@ -267,19 +242,9 @@ button:disabled{
 }
 @media (min-width: 1024px) and (orientation: portrait){
     body{
-        padding-top: 120px;
+        padding-top: 80px;
     }
-    #profile img{
-        width: 168px;
-    }
-    #profile p{
-        font-size: 24px;
-        padding-top: 6px;
-    }
-    #profile h6{
-        font-size: 16px;
-        padding-top: 4px;
-    }
+
     #switch{
         position: relative;
         width: 96px;
